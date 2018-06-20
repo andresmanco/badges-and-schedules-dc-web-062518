@@ -21,6 +21,9 @@ def assign_rooms(attendees)
 end
     
 def printer(attendees)
+  .each do |a|
+  batch_badge_creator(attendees)
+  
   copy = attendees
   str1 = nil
   str2 = nil
