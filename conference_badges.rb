@@ -22,18 +22,9 @@ end
     
 def printer(attendees)
   batch_badge_creator(attendees).each do |a|
-  puts a
-  
-  copy = attendees
-  str1 = nil
-  str2 = nil
-  n = 0
-  count = attendees.size
-  until n == count
-    str1 = batch_badge_creator(attendees).shift
-    str2 = assign_rooms(copy).shift
-    attendees.shift
-    puts str1
-    puts str2
+    puts a
+  end
+  assign_rooms(attendees).each do |a|
+    puts a
   end
 end
