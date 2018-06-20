@@ -33,12 +33,10 @@ def printer(attendees)
     attendees.shift
     puts str1
     puts str2
-=======
   until n == attendees.size
     str1 = batch_badge_creator(attendees).shift
     attendees.shift
     puts str1
->>>>>>> 5ce306781936e24dbfcf1a716a19371118feea7d
     n+=1
   end
 end
